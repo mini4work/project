@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+use App\Kernels\BaseKernel;
+use M4W\Exception\Handler;
+use M4W\Framework;
+
+require __DIR__.'/vendor/autoload.php';
+
+$app = new Framework();
+try {
+    /** @var BaseKernel $kernel */
+    $kernel = $app->make(BaseKernel::class);
+    $kernel->handle($_SERVER['argv']);
+} catch (Throwable $throwable) {
+    Handler::cause($throwable);
+}

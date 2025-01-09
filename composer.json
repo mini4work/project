@@ -1,0 +1,28 @@
+{
+  "name": "mini4work/project",
+  "description": "A minimalistic and flexible PHP framework with a lightweight core and modular structure.",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.3",
+    "mini4work/core": "^1.0"
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
