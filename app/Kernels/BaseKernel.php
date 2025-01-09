@@ -2,38 +2,39 @@
 
 namespace App\Kernels;
 
+use App\ServiceProviders\BaseServiceProvider;
+use App\Services\BaseService;
+use Exception;
 use M4W\Abstract\AbstractKernel;
 use M4W\Enums\ConsoleStyles;
 use M4W\Facades\Console;
 
 class BaseKernel extends AbstractKernel
 {
+    /**
+     * @throws Exception
+     */
     public function handle(...$args): void
     {
-        Console::writeLine('Hello there!', ConsoleStyles::BgGreen);
-        Console::writeLine('This message from a standard BaseKernel.', ConsoleStyles::BgMagenta);
+        /** @var BaseService $service */
+        $service = app(BaseService::class); // Dependency Injection Container (BaseService is singleton)
 
-        if (count($args[0]) == 1) {
-            Console::writeLine('For next testing step, you can try run this command with params', ConsoleStyles::FormatUnderlineOn);
+        $service->echoTextLogo();
 
-            Console::writeLine([
-                ['Try, for example: '],
-                ['php m4w hello', ConsoleStyles::TextGreen]
-            ]);
-            return;
-        }
-
-
-        $argsList = implode(', ', array_splice($args[0], 1));
         Console::writeLine([
-            ['Your arguments for command: ', ConsoleStyles::TextDefault],
-            [$argsList, ConsoleStyles::TextBlue]
+            ['This use DI: ', [ConsoleStyles::FormatBoldOn]],
+            [$service->textFromDependency(), [ConsoleStyles::TextBlue]]
         ]);
+
+        Console::writeLine();
+
+        $service->echoArgsIfSetted($args);
     }
 
-    public
-    function serviceProviders(): array
+    public function serviceProviders(): array
     {
-        return [];
+        return [
+            BaseServiceProvider::class
+        ];
     }
 }

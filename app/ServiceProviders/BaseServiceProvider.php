@@ -2,6 +2,7 @@
 
 namespace App\ServiceProviders;
 
+use App\Services\BaseService;
 use M4W\Providers\AbstractServiceProvider;
 
 class BaseServiceProvider extends AbstractServiceProvider
@@ -9,6 +10,6 @@ class BaseServiceProvider extends AbstractServiceProvider
 
     public function register(): void
     {
-        // Do nothing
+        $this->app->singleton(BaseService::class);
     }
 }

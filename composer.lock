@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "mini4work/core",
-            "version": "1.0.8",
+            "version": "1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mini4work/core.git",
-                "reference": "eeb79c2adeeb0d3a04be7a9001cd467068f713f1"
+                "reference": "19b2ecbf82276c5ed702ee977122312c8c2674ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mini4work/core/zipball/eeb79c2adeeb0d3a04be7a9001cd467068f713f1",
-                "reference": "eeb79c2adeeb0d3a04be7a9001cd467068f713f1",
+                "url": "https://api.github.com/repos/mini4work/core/zipball/19b2ecbf82276c5ed702ee977122312c8c2674ed",
+                "reference": "19b2ecbf82276c5ed702ee977122312c8c2674ed",
                 "shasum": ""
             },
             "require": {
@@ -48,9 +48,9 @@
             "description": "A minimalistic and flexible PHP framework with a lightweight core and modular structure.",
             "support": {
                 "issues": "https://github.com/mini4work/core/issues",
-                "source": "https://github.com/mini4work/core/tree/1.0.8"
+                "source": "https://github.com/mini4work/core/tree/1.0.14"
             },
-            "time": "2025-01-09T19:26:12+00:00"
+            "time": "2025-01-09T22:38:40+00:00"
         }
     ],
     "packages-dev": [
