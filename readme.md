@@ -12,6 +12,25 @@
 - **Lightweight and Fast** – Designed to deliver optimal performance with minimal resource usage.
 - **Easy to Learn and Use** – Straightforward design and clear documentation make it accessible for developers of all levels. (In develop, really!)
 
+## Getting started
+
+### Prerequisites
+ * PHP version 8.3 or high
+ * Composer
+
+### Creating app
+
+This command will generate a new directory containing the basic project structure. Give it a try:
+```
+composer create-project mini4work/project myFirstApp
+```
+
+Move to your new directory and make first launch:
+```
+cd myFirstApp
+php m4w
+```
+
 ## Contributing
 Mini4Work is designed to remain simple and lightweight. If you have any improvements or features to suggest for the core framework, feel free to submit a Pull Request.
 
