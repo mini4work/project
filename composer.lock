@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "966b2958f5c019c73fcccb64a8a16a5c",
+    "content-hash": "17996e465eac2a037e1037c1724577a3",
     "packages": [
         {
             "name": "mini4work/core",
-            "version": "1.0.14",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mini4work/core.git",
-                "reference": "19b2ecbf82276c5ed702ee977122312c8c2674ed"
+                "reference": "7006a3b2b82c6362f888705dc0358298e55be044"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mini4work/core/zipball/19b2ecbf82276c5ed702ee977122312c8c2674ed",
-                "reference": "19b2ecbf82276c5ed702ee977122312c8c2674ed",
+                "url": "https://api.github.com/repos/mini4work/core/zipball/7006a3b2b82c6362f888705dc0358298e55be044",
+                "reference": "7006a3b2b82c6362f888705dc0358298e55be044",
                 "shasum": ""
             },
             "require": {
@@ -32,12 +32,12 @@
                     "app/helpers.php"
                 ],
                 "psr-4": {
-                    "M4W\\": "app/"
+                    "M4W\\Core\\": "app/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {
@@ -48,9 +48,9 @@
             "description": "A minimalistic and flexible PHP framework with a lightweight core and modular structure.",
             "support": {
                 "issues": "https://github.com/mini4work/core/issues",
-                "source": "https://github.com/mini4work/core/tree/1.0.14"
+                "source": "https://github.com/mini4work/core/tree/1.1.0"
             },
-            "time": "2025-01-09T22:38:40+00:00"
+            "time": "2025-01-10T17:42:35+00:00"
         }
     ],
     "packages-dev": [

@@ -3,7 +3,7 @@
 namespace App\ServiceProviders;
 
 use App\Services\BaseService;
-use M4W\Providers\AbstractServiceProvider;
+use M4W\Core\Providers\AbstractServiceProvider;
 
 class BaseServiceProvider extends AbstractServiceProvider
 {

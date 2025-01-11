@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
     "php": "^8.3",
-    "mini4work/core": "^1.0"
+    "mini4work/core": "^1.1"
   },
   "require-dev": {
     "pestphp/pest": "^3.5"

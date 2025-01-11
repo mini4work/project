@@ -5,9 +5,9 @@ namespace App\Kernels;
 use App\ServiceProviders\BaseServiceProvider;
 use App\Services\BaseService;
 use Exception;
-use M4W\Abstract\AbstractKernel;
-use M4W\Enums\ConsoleStyles;
-use M4W\Facades\Console;
+use M4W\Core\Abstract\AbstractKernel;
+use M4W\Core\Enums\ConsoleStyles;
+use M4W\Core\Facades\Console;
 
 class BaseKernel extends AbstractKernel
 {

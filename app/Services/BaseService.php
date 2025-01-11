@@ -2,8 +2,8 @@
 
 namespace App\Services;
 
-use M4W\Enums\ConsoleStyles;
-use M4W\Facades\Console;
+use M4W\Core\Enums\ConsoleStyles;
+use M4W\Core\Facades\Console;
 
 class BaseService
 {
