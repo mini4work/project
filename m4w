@@ -2,8 +2,8 @@
 <?php
 
 use App\Kernels\BaseKernel;
-use M4W\Exception\Handler;
-use M4W\Framework;
+use M4W\Core\Exception\Handler;
+use M4W\Core\Framework;
 
 require __DIR__.'/vendor/autoload.php';
 
